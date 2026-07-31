@@ -1,0 +1,6 @@
+node_modules/
+.env.example
+save.md 
+.env
+prisma/migrations
+convert_to_commondjs.js
