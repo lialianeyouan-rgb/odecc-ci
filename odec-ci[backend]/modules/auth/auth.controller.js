@@ -18,7 +18,7 @@ const login = async (req, res, next) => {
       where: { username },
     });
 
-    if (!admin || !bcrypt.compareSync(password, admin.password)) {
+    if (!admin || password !== admin.password) {
       throw createHttpError(
         401,
         "Identifiants invalides",
